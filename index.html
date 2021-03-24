@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="/assets/termynal.css">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="" id="particles-js"></div>
+    <header>
+        <div class="wrapper">
+            <a href="#" class="firstName">Lucas <span class="lastName">Cipriano</span></a>
+            <!-- <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact</a>
+            </nav> -->
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <section class="first center-elements">
+        <div class="wrapper grid-home">
+            <div class="left-home">
+                <h1>Hellou, visitor!</h1>
+                <p class="resume">I'm a Front-End Developer <span class="looking">qualquer mensagem aqui</span>
+                </p>
+
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/lucasncipriano/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.github.com/lucascipriano" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-github fa-stack-1x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.twitter.com/lucasncipriano" target="_blank">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div id="termynal" data-termynal class="right-home">
+                <span data-ty="input" data-ty-prompt="λ">NAME="Lucas Cipriano"</span>
+                <span data-ty="input" data-ty-prompt="λ">NICKNAME="Mav"</span>
+                <span data-ty="input" data-ty-prompt="λ">VERSION="23y LTS"</span>
+                <span data-ty="input" data-ty-prompt="λ">INTERESTS="Linux, Open Source"</span>
+                <span data-ty="input" data-ty-prompt="λ">BASE="Arch, Debian and Slackware"</span>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME -->
+
+    <section class="second">
+        <div class="wrapper about">
+            <h1 class="description-about">About</h1>
+            <div class="description-about">
+                <p>Also known as Mav.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, velit! Nulla, ipsam. Iste
+                    repudiandae, expedita tenetur eveniet consequuntur eaque neque.
+                </p>
+            </div>
+            <div class="skills grid-about">
+                <div class="left-about">
+                    <div class="technology">
+                        <h2>JAVASCRIPTAINO</h2>
+                        <div class="aaa">
+                            <img src="/img/react-logo.svg" alt="react-logo" />
+                            <img src="/img/vue-logo.svg" alt="vue-logo" />
+                            <img src="/img/typescript-logo.svg" alt="typescript-logo" />
+                        </div>
+                        <!-- <img src="/img/nodejs-logo.svg" alt="node-logo" /> -->
+                    </div>
+                </div>
+
+                <div class="right-about">
+                    <div class="technology">
+                        <h2>RANDOM</h2>
+                        <div class="aaa">
+                            <img src="/img/cplsuplsu-logo.svg" alt="cplusplus-logo" />
+                            <img src="/img/csharp-logo.svg" alt="csharp-logo" id="csharp" />
+                            <img src="/img/ruby-logo.svg" alt="my-photo" />
+                            <!-- <img src="https://via.placeholder.com/100" alt="my-photo" /> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="/assets/termynal.js"></script>
+    <script src="/assets/particles.min.js"></script>
+    <script>
+        var termynal = new Termynal('#termynal', {
+            typeDelay: 40,
+            lineDelay: 700,
+
+        });
+    </script>
+    <script>
+        particlesJS("particles-js", { "particles": { "number": { "value": 80, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+
+    </script>
+</body>
+
+</html>
